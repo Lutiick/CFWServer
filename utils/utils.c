@@ -17,7 +17,7 @@ int is_ip(char * IP) {
     }
 
     struct sockaddr_in sa;
-    return 0 != inet_pton(AF_INET, IP, &(sa.sin_addr))
+    return 0 != inet_pton(AF_INET, IP, &(sa.sin_addr));
 }
 
 char * parse_request(char *buffer) {
